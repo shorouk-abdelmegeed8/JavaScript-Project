@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lightbox.min.css">
+
+
+</head>
+
+<body>
+
+    
+    <section name="navBar">
+
+        <nav class="header">
+
+            <div id="logo">
+                <img src="../images/dark-logo.png">
+            </div>
+            <ul>
+                <li data-count="1"><a class="activeNav navItem" href="#">Home</a></li>
+                <li><a class="navItem" href="#ourProduct">Our Product</a></li>
+                <li><a class="navItem" href="#aboutUs">Contact Us</a></li>
+                <li><a class="navItem" href="../html/loginPage.html">Login</a></li>
+                <li><i class=" addIcon1 fas fa-cart-plus"></i> <span class="spanAdd1"></span></li>
+            </ul>
+
+
+
+        </nav>
+
+
+
+        <button onclick="topFunction()" id="topBtn"> <i class="fas fa-arrow-up"></i></button>
+        <button  id="addBtn2"><i class=" addIcon2 fas fa-cart-plus"></i> <span class="spanAdd2"></span></button>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="../images/BG1.png" style="width:100%">
+
+
+                <div class="text">
+                    <!-- <img src="../images/light-logo.png"> -->
+                    <!-- <br> <img id="img2" src="../images/discount.png"><br> -->
+                    <!-- <button class="btn-product"><a href="#"> Shop Now</a></button> -->
+
+                </div>
+            </div>
+
+
+
+            <div class="mySlides fade">
+                <img src="../images/bg2.png" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+
+
+    </section>
+
+    <section id="ourProduct">
+        <div class="title">
+            <h2> Products</h2>
+            <h3> Clothing</h3>
+
+        </div>
+
+
+
+        <div class="wrapper">
+            <!-- filter Items -->
+            <nav>
+                <div class="items">
+                    <span class="item active" data-name="all">All</span>
+                    <span class="item" data-name="clothes">Clothes</span>
+                    <span class="item" data-name="bags">Bags</span>
+                    <span class="item" data-name="watch">Watch</span>
+                    <span class="item" data-name="shoes">Shoes</span>
+                    <span class="item" data-name="makeup">Makeup</span>
+                </div>
+            </nav>
+        </div>
+        <div id="allproduct">
+
+            <div data-name="clothes" class="info">
+                <a href="../images/blazer.jpg" data-lightbox="c1"> <img src="../images/blazer.jpg" data-lightbox=""></a>
+                <div class="caption">
+                    <h3>Feminine-cut blazer</h3>
+
+                    <p>EGP 500 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+
+            <div class="info" data-name="clothes">
+                <a href="../images/dress.jpg" data-lightbox="c1"> <img src="../images/dress.jpg"></a>
+                <div class="caption">
+                    <h3>Corduroy sleeveless jumpsuit</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+
+            <div class="info" data-name="bags">
+                <img src="../images/bag1.jpg">
+                <div class="caption">
+                    <h3>ilted handbag with chain</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+            <div class="info" data-name="watch">
+                <img src="../images/watch1.jpg">
+                <div class="caption">
+                    <h3>Steel Watch With Strass Dial</h3>
+                    <p>EGP 1000 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+            <div class="info" data-name="clothes">
+                <a href="../images/jacket.jpg" data-lightbox="c1"> <img src="../images/jacket.jpg"></a>
+                <div class="caption">
+                    <h3>College cotton jacket</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+
+
+            <div class="info" data-name="shoes">
+                <img src="../images/shoes1.jpg">
+                <div class="caption">
+                    <h3>Fitted high-heel ankle boots with textured sole</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+
+            <div class="info" data-name="watch">
+                <img src="../images/watch2.jpg">
+                <div class="caption">
+                    <h3>Steel Watch With Strass Dial</h3>
+                    <p>EGP 1000 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+            <div class="info" data-name="bags">
+
+                <img src="../images/bag2.jpg">
+
+                <div class="caption">
+                    <h3>ilted handbag with chain</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+            <div class="info" data-name="bags">
+
+                <img src="../images/bag3.jpg">
+
+                <div class="caption">
+                    <h3>ilted handbag with chain</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+
+            <div class="info" data-name="watch">
+                <img src="../images/watch3.jpg">
+                <div class="caption">
+                    <h3>Steel Watch With Strass Dial</h3>
+                    <p>EGP 1000 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+            <div class="info" data-name="bags">
+
+                <img src="../images/bag4.jpg">
+
+                <div class="caption">
+                    <h3>ilted handbag with chain</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+            <div class="info" data-name="makeup">
+
+                <img src="../images/makeup2.jpg">
+
+                <div class="caption">
+                    <h3>FIT ME LUMINOUS + SMOOTH PRIMER</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+            <div class="info" data-name="makeup">
+
+                <img src="../images/maeup1.jpg">
+
+                <div class="caption">
+                    <h3>FIT ME LUMINOUS + SMOOTH PRIMER</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+
+            <div class="info" data-name="shoes">
+                <img src="../images/shoes2.jpg">
+                <div class="caption">
+                    <h3>Fitted high-heel ankle boots with textured sole</h3>
+                    <p>EGP 500 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+            <div class="info" data-name="watch">
+                <img src="../images/watch4.jpg">
+                <div class="caption">
+                    <h3>Steel Watch With Strass Dial</h3>
+                    <p>EGP 1000 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+
+            <div class="info" data-name="clothes">
+                <a href="../images/jacket2.jpg" data-lightbox="c1"><img src="../images/jacket2.jpg"></a>
+                <div class="caption">
+                    <h3>Faux nylon cropped gilet</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+
+            <div class="info" data-name="shoes">
+                <img src="../images/shoes4.jpg">
+                <div class="caption">
+                    <h3>Fitted high-heel ankle boots with textured sole</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+            <div class="info" data-name="shoes">
+                <img src="../images/shoes3.jpg">
+                <div class="caption">
+                    <h3>Fitted high-heel ankle boots with textured sole</h3>
+                    <p>EGP 300 </p>
+                    <button class="addBtn"><a><i class="fas fa-cart-plus"></i> Add To Card</a></button>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="footerContainer">
+
+            <div id="imgFooter">
+                <img src="../images/light-logo.png" alt="">
+            </div>
+
+            <div class="commentications">
+
+                <div>
+                    <i class="footerIcon fa fa-map-marker"></i>
+                    <p> 444 S. Cedros Ave Solana Beach, California</p>
+                </div>
+
+                <div>
+                    <i class="footerIcon fa fa-phone"></i>
+                    <p> +1.555.555.5555</p>
+                </div>
+
+                <div>
+                    <i class="footerIcon fa fa-envelope"></i>
+                    <p><a href="#"> support@clothing.com</a></p>
+                </div>
+
+                <div>
+                    <i class="footerIcon fab fa-facebook-square"></i>
+                    <p> https://www.facebook.com/clothing</p>
+
+                </div>
+            </div>
+        </div>
+
+
+<div class="footerP2">
+
+        <div id="aboutUs">
+            <h1>ABOUT US</h1>
+            <P>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo reiciendis minima totam minus. Pariatur
+                tempore obcaecati reprehenderit, eveniet praesentium qui hic nesciunt, exercitationem optio quod,
+                deserunt culpa blanditiis odit facilis consectetur vitae aperiam perspiciatis magnam est voluptates
+                possimus eum non at placeat! Saepe, iste. Reprehenderit molestias eaque voluptate molestiae esse?</P>
+        </div>
+
+        <div class="Accordion">
+        <button class="accordion">Branch1</button>
+        <div class="panel">
+            <p>los vags, usa</p>
+        </div>
+
+        <button class="accordion">Branch2</button>
+        <div class="panel">
+            <p>bikin, korea</p>
+        </div>
+
+    </div>
+
+</div>
+    </footer>
+
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
+    <script src="../js/all.min.js"></script>
+    <script src="../js/home.js"></script>
+
+</body>
+
+</html>

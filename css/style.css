@@ -1,0 +1,644 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: Helvetica, Helvetica Neue, Arial, Lucida Grande, sans-serif;
+    font-weight: 550;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* navBar start */
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
+}
+
+.header li {
+    padding-top: 20px;
+    display: flex;
+
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+
+    border-bottom: 1px solid transparent;
+
+
+}
+
+.header li a {
+    text-decoration: none;
+    text-align: center;
+    color: rgba(19, 17, 17, 0.514);
+    padding: 3px;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.activeNav {
+border:1px solid #2295bb;
+
+box-shadow: 2px 1px #2295bb;}
+
+
+li a:hover {
+
+    border-bottom: 1px solid #717171;
+    transform: scale(1.1) ;
+
+}
+
+#logo img {
+    height: 70px;
+    margin-left: 50px;
+
+    object-fit: contain;
+}
+
+
+/* #logo p{
+    font-family:cursive;
+    font-size: x-large;
+    color: #2976aa;
+} */
+
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+/* add cart */
+.spanAdd1 .spanAdd2{
+    width: 15px;
+    height: 15px;
+    display: none;
+    font-size: small ;
+    color: #2295bb;
+
+}
+
+.spanAdd2{
+color: black;
+    font-size: small ;
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+.select{
+    width: 60%;
+    height: 580px;
+    padding: 5%;
+    background: #222;
+    position: absolute;
+    top: -1000px;
+    left: 20%;
+    transition: 0.5s;
+    overflow-y: auto;
+    margin: auto;
+    z-index: 1000;;
+}
+.select.display{
+    top: 10px;
+}
+.select div{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 5px;
+    border: 1px solid white;
+    position: relative;
+    margin: 5px auto;
+}
+.select .zero::before {
+    opacity: 1;
+} */
+
+/* navBar end */
+
+
+
+/* top button */
+
+#topBtn {
+    background-color: #2295bb;
+    font-size: x-large;
+    border-radius: 30px;
+    padding: 5px;
+    color: white;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+    box-shadow: 2px 2px 2px 2px #5a7f8b;
+    /* animation: ; */
+
+}
+
+#addBtn2{
+    background-color: #2295bb;
+    font-size: x-large;
+    border-radius: 30px;
+    padding: 5px;
+    color: white;
+    border: none;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    cursor: pointer;
+    display: none;
+    z-index: 100;
+    box-shadow: 2px 2px 2px 2px #5a7f8b;
+}
+
+  
+#topBtn:hover {
+    background-color: #5a7f8b;
+    border: 3px #2295bb;
+}
+
+
+/* slidder start */
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    top: 15%;
+    right: 30%;
+}
+
+.text p {
+    color: black;
+
+}
+
+
+
+
+.btn-product {
+    margin: 20px;
+    padding: 13px;
+    font-size: x-large;
+    border-radius: 10px;
+    color: blanchedalmond;
+    background: #2295bb;
+
+
+}
+
+.btn-product a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-bottom: 50px;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* slidder end */
+
+
+/* products */
+
+.title {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 70px;
+
+}
+
+
+.title h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #2295bb;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline;
+    bottom: 20px;
+    text-shadow: 1.5px 1.5px  black;
+
+}
+
+.title h3 {
+    font-size: 1.5rem;
+    position: absolute;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+
+/* items */
+
+.wrapper {
+    margin: 50px auto;
+    max-width: 1100px;
+}
+
+.wrapper nav {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .items {
+    display: flex;
+    max-width: 720px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.items span {
+    padding: 7px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #2295bb;
+    border-radius: 50px;
+    border: 2px solid #2295bb;
+    transition: all 0.3s ease;
+}
+
+.items span.active,
+.items span:hover {
+    color: #fff;
+    background: #2295bb;
+}
+
+
+
+
+
+#allproduct {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+
+.info {
+    border-radius: 5px;
+    overflow: hidden;
+    width: 320px;
+    margin-bottom: 30px;
+
+}
+
+.info img {
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18px;
+    color: black;
+}
+
+.caption h3 {
+    font-weight: lighter;
+}
+
+
+
+#addItem a {
+    margin: 20px;
+    padding: 13px;
+    border-radius: 10px;
+    color: blanchedalmond;
+    background: #333333;
+    background-color: brown;
+}
+
+
+
+
+
+
+.info:hover img {
+    transform: scale(1.1);
+    top: 0%;
+
+}
+
+
+.addBtn {
+    border: hidden;
+
+}
+
+.addBtn {
+    margin-top: 8px;
+    background-color: white;
+    word-spacing: 1.5px;
+    color: #2295bb;
+    ;
+}
+
+
+#allproduct .info.hide {
+    display: none;
+}
+
+#allproduct .info.show {
+    display: block;
+    animation: animate 0.4s ease;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+footer{
+    background-color: #666;
+
+}
+
+.footerContainer{
+    margin: auto;
+    display: flex;
+    padding: 50px  ;
+
+}
+
+footer .commentications, #aboutUs{
+width:50%;
+}
+.commentications{
+
+    padding-left: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column  ;
+    justify-content: space-around;
+    }
+
+    #aboutUs p{
+        color: honeydew;
+        font-weight: lighter;
+        
+
+    }
+    #aboutUs{
+margin-left: 50px;
+padding-bottom: 20px;    }
+
+    #aboutUs h1{
+        margin-bottom: 10px;
+        margin-top: 20px;
+        color: #2295bb;
+        text-shadow: 1px 1px black;
+    }
+    .commentications p{
+        display: inline-block;
+        color:rgb(31, 28, 28);
+      font-weight:400;
+        vertical-align: middle;
+  margin-bottom: 15px;
+  color: white;
+       
+    }
+
+
+    .commentications p a{
+        text-decoration: none;
+        /* color: #384042; */
+
+        color: rgb(31, 28, 28);
+
+    }
+
+
+/* #ff181d */
+/* #085671 */
+
+.footerIcon{
+
+    box-sizing: content-box;
+    display: inline-block;
+border:1px solid #ffffff  ;
+padding: 5px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 50%;
+    
+    color: #ffffff;
+    text-align: center;
+    
+    margin-right: 3px;
+}
+
+#imgFooter{
+    width: 50%;
+    height: 150px;
+}
+
+.footerP2{
+    display: flex;
+    flex-direction: row;
+}
+
+ #aboutUs ,.Accordion{
+width: 50%;
+}
+.Accordion{
+    margin-top: 40px;
+}
+
+
+/* accordion */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 50%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+
+  /* validation */
+
+ 
+
+
+
+
+
+ /*  */
