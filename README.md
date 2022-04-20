@@ -1,2 +1,2 @@
 # jsProject
-simple project using javascript 
+simple clothing store project using javascript 
